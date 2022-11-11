@@ -31,17 +31,53 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 };
 
+#ifdef RGBLIGHT_ENABLE
+    void keyboard_post_init_user(void) {
+    rgblight_enable_noeeprom(); // Enables RGB, without saving settings
+    rgblight_sethsv_noeeprom(HSV_PURPLE);
+    rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+}
+#endif
+
 layer_state_t layer_state_set_user(layer_state_t state) {
     switch (get_highest_layer(state)) {
     case 0:
-        rgblight_setrgb(10, 123, 40); // Set all keys to one color
-        rgblight_setrgb_at(128, 128, 0, 2); // Set K33 key color
-        rgblight_setrgb_at(128, 128, 0, 14); // Set K42 key color
-        rgblight_setrgb_at(128, 128, 0, 13); // Set K43 key color
-        rgblight_setrgb_at(128, 128, 0, 12); // Set K44 key color
+        //rgblight_setrgb(10, 123, 40); // Set all keys to one color
+        rgblight_sethsv_noeeprom(HSV_PURPLE);
+
+        rgblight_setrgb_at(10, 123, 40, 20); // Set K00 key color
+        rgblight_setrgb_at(10, 123, 40, 21); // Set K01 key color
+        rgblight_setrgb_at(10, 123, 40, 22); // Set K02 key color
+        rgblight_setrgb_at(10, 123, 40, 23); // Set K03 key color
+        rgblight_setrgb_at(10, 123, 40, 24); // Set K04 key color
+
+        rgblight_setrgb_at(10, 123, 40, 19); // Set K10 key color
+        rgblight_setrgb_at(10, 123, 40, 6); // Set K11 key color
+        rgblight_setrgb_at(10, 123, 40, 7); // Set K12 key color
+        rgblight_setrgb_at(10, 123, 40, 8); // Set K13 key color
+        rgblight_setrgb_at(10, 123, 40, 9); // Set K14 key color
+
+        rgblight_setrgb_at(10, 123, 40, 18); // Set K20 key color
+        rgblight_setrgb_at(10, 123, 40, 5); // Set K21 key color
+        rgblight_setrgb_at(10, 123, 40, 0); // Set K22 key color
+        rgblight_setrgb_at(10, 123, 40, 1); // Set K23 key color
+        rgblight_setrgb_at(10, 123, 40, 10); // Set K24 key color
+
+        rgblight_setrgb_at(10, 123, 40, 17); // Set K30 key color
+        rgblight_setrgb_at(10, 123, 40, 4); // Set K31 key color
+        rgblight_setrgb_at(10, 123, 40, 3); // Set K32 key color
+        rgblight_setrgb_at(255, 165, 0, 2); // Set K33 key color
+        rgblight_setrgb_at(10, 123, 40, 11); // Set K34 key color
+
+        rgblight_setrgb_at(10, 123, 40, 16); // Set K40 key color
+        rgblight_setrgb_at(10, 123, 40, 15); // Set K41 key color
+        rgblight_setrgb_at(255, 165, 0, 14); // Set K42 key color
+        rgblight_setrgb_at(255, 165, 0, 13); // Set K43 key color
+        rgblight_setrgb_at(255, 165, 0, 12); // Set K44 key color
         break;
     case 1:
         //rgblight_setrgb(128, 0, 128); // Set all keys to one color
+        rgblight_sethsv_noeeprom(HSV_PURPLE);
         rgblight_setrgb_at(128, 0, 128, 20); // Set K00 key color
         rgblight_setrgb_at(128, 0, 128, 21); // Set K01 key color
         rgblight_setrgb_at(128, 0, 128, 22); // Set K02 key color
@@ -57,20 +93,20 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         rgblight_setrgb_at(128, 0, 128, 18); // Set K20 key color
         rgblight_setrgb_at(128, 0, 128, 5); // Set K21 key color
         rgblight_setrgb_at(128, 0, 128, 0); // Set K22 key color
-        rgblight_setrgb_at(10, 123, 40, 1); // Set K23 key color
+        rgblight_setrgb_at(128, 0, 128, 1); // Set K23 key color
         rgblight_setrgb_at(128, 0, 128, 10); // Set K24 key color
 
         rgblight_setrgb_at(10, 123, 40, 17); // Set K30 key color
         rgblight_setrgb_at(10, 123, 40, 4); // Set K31 key color
         rgblight_setrgb_at(10, 123, 40, 3); // Set K32 key color
-        rgblight_setrgb_at(128, 128, 0, 2); // Set K33 key color
+        rgblight_setrgb_at(255, 165, 0, 2); // Set K33 key color
         rgblight_setrgb_at(128, 0, 128, 11); // Set K34 key color
 
         rgblight_setrgb_at(10, 123, 40, 16); // Set K40 key color
         rgblight_setrgb_at(10, 123, 40, 15); // Set K41 key color
-        rgblight_setrgb_at(128, 128, 0, 14); // Set K42 key color
-        rgblight_setrgb_at(128, 128, 0, 13); // Set K43 key color
-        rgblight_setrgb_at(128, 128, 0, 12); // Set K44 key color
+        rgblight_setrgb_at(255, 165, 0, 14); // Set K42 key color
+        rgblight_setrgb_at(255, 165, 0, 13); // Set K43 key color
+        rgblight_setrgb_at(255, 165, 0, 12); // Set K44 key color
         break;
     default:
         rgblight_setrgb(10, 123, 40);
