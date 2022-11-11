@@ -23,8 +23,8 @@ qmk compile -kb winry/winry25tc -km viaPerKey
         KC_PSCR, KC_SCRL, KC_PAUS, KC_NO,   _______,
         KC_INS,  KC_HOME, KC_PGUP, KC_NO,   _______,
         KC_DEL,  KC_END,  KC_PGDN, _______, _______,
-        KC_NO,   KC_NO,   KC_NO,   _______, _______,
-        KC_NO,   KC_NO,   _______, _______, _______
+        KC_F12,  KC_F2,   KC_F3,   _______, _______,
+        KC_F4,   KC_F5,   _______, _______, _______
 ```
 
 **winry25tc.h**
