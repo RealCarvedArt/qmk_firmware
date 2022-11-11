@@ -42,16 +42,14 @@ qmk compile -kb winry/winry25tc -km viaPerKey
     { K40,   K41,   K42,   K43,   K44   }, \
 ```
 
-
-
-
-
-
-
-
-
-
-
 **LED Map:**
 
- ![image](https://user-images.githubusercontent.com/78761379/200986962-b5673965-1834-4bab-a3a2-43af94b449e0.png)
+![image](https://user-images.githubusercontent.com/78761379/200986962-b5673965-1834-4bab-a3a2-43af94b449e0.png)
+ 
+ **Layer 0:**
+ 
+![IMG20221111160245](https://user-images.githubusercontent.com/78761379/201430664-39b9d7b3-0d74-47f4-aaef-9c34105327d6.jpg)
+
+**Layer 1:**
+
+![IMG20221111160256](https://user-images.githubusercontent.com/78761379/201430712-acfef1a8-987f-445a-bf20-088273fd380e.jpg)
