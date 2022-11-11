@@ -78,6 +78,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     case 1:
         //rgblight_setrgb(128, 0, 128); // Set all keys to one color
         rgblight_sethsv_noeeprom(HSV_PURPLE);
+        
         rgblight_setrgb_at(128, 0, 128, 20); // Set K00 key color
         rgblight_setrgb_at(128, 0, 128, 21); // Set K01 key color
         rgblight_setrgb_at(128, 0, 128, 22); // Set K02 key color
