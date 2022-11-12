@@ -16,12 +16,12 @@ qmk compile -kb winry/winry25tc -km via
 ```
         KC_BSPC, KC_PSLS, KC_PAST, KC_PMNS, KC_DEL,
         KC_P7,   KC_P8,   KC_P9,   KC_PPLS, RGB_TOG,
-        KC_P4,   KC_P5,   KC_P6,   KC_PENT, KC_RCTL,
+        KC_P4,   KC_P5,   KC_P6,   KC_PENT, KC_RALT,
         KC_P1,   KC_P2,   KC_P3,   KC_UP,   TG(1),
         KC_P0,   KC_PDOT, KC_LEFT, KC_DOWN, KC_RGHT
 
         KC_PSCR, KC_SCRL, KC_PAUS, KC_NO,   _______,
-        KC_INS,  KC_HOME, KC_PGUP, KC_NO,   _______,
+        KC_INS,  KC_HOME, KC_PGUP, KC_NO,   KC_RCTL,
         KC_DEL,  KC_END,  KC_PGDN, _______, _______,
         KC_F12,  KC_F2,   KC_F3,   _______, _______,
         KC_F4,   KC_F5,   _______, _______, _______
