@@ -9,7 +9,7 @@
 
 **Example Make with QMK MSYS:**
 ```
-qmk compile -kb winry/winry25tc -km viaPerKey
+qmk compile -kb winry/winry25tc -km via
 ```
 
 **keymap.c**
