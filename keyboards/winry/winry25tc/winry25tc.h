@@ -1,4 +1,4 @@
-/* Copyright 2021 Andrzej Ressel (andrzej.ressel@gmail.com)
+/* Copyright 2022 Andrzej Ressel (andrzej.ressel@gmail.com)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,6 +18,12 @@
 
 #include "quantum.h"
 
+/* The first section contains all of the arguments representing the physical
+ * layout of the board and position of the keys.
+ *
+ * The second converts the arguments into a two-dimensional array which
+ * represents the switch matrix.
+ */
 #define LAYOUT( \
     K00, K01, K02, K03, K04,   \
     K10, K11, K12, K13, K14,   \
