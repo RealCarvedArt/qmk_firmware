@@ -83,13 +83,13 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         rgblight_setrgb_at(128, 0, 128, 20); // Set K00 key color
         rgblight_setrgb_at(128, 0, 128, 21); // Set K01 key color
         rgblight_setrgb_at(128, 0, 128, 22); // Set K02 key color
-        rgblight_setrgb_at(10, 123, 40, 23); // Set K03 key color
+        rgblight_setrgb_at(0, 0, 0, 23); // Set K03 key color
         rgblight_setrgb_at(128, 0, 128, 24); // Set K04 key color
 
         rgblight_setrgb_at(128, 0, 128, 19); // Set K10 key color
         rgblight_setrgb_at(128, 0, 128, 6); // Set K11 key color
         rgblight_setrgb_at(128, 0, 128, 7); // Set K12 key color
-        rgblight_setrgb_at(10, 123, 40, 8); // Set K13 key color
+        rgblight_setrgb_at(0, 0, 0, 8); // Set K13 key color
         rgblight_setrgb_at(128, 0, 128, 9); // Set K14 key color
 
         rgblight_setrgb_at(128, 0, 128, 18); // Set K20 key color
