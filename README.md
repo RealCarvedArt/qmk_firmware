@@ -5,7 +5,7 @@
 **Tools used:**
 - QMK MSYS
 - QMK Toolbox
-- VIA
+- VIA (https://github.com/the-via/releases)
 
 **Example Make with QMK MSYS:**
 ```
