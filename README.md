@@ -3,8 +3,8 @@
 *Multiple layers with per key colors*
 
 **Tools used:**
-- QMK MSYS
-- QMK Toolbox
+- QMK MSYS (https://msys.qmk.fm/)
+- QMK Toolbox (https://github.com/qmk/qmk_toolbox/releases)
 - VIA (https://github.com/the-via/releases)
 
 **Example Make with QMK MSYS:**
